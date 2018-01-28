@@ -1,0 +1,230 @@
+@charset "utf-8";
+.logo {
+	width: 2.5em;
+	height: 2.5em;
+}
+.navbar {
+	display: table;
+	opacity: 0.75;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow : hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	height: 10vh;
+	width: 100vw;
+	z-index: 99999;
+}
+.navbar a {
+	float : left;
+	display: block;
+	color: #EBEBEB;
+	text-align: left;
+	padding: 1vw 1vw;
+	text-decoration: none;
+	font-family: 'Reitam', sans-serif;
+	font-size: 1em;
+}
+.navbar a:hover {
+	color: #AFAFAF;
+}
+.main {
+	padding: 0;
+	margin-top: 0;
+	width: 100%;
+	border: none;
+	border-color: none;
+	border-collapse:collapse;
+}
+.main td {
+	border:none;
+   	outline:none;
+}
+.SectionHeading {
+	font-family: 'Reitam', sans-serif;
+	font-size: 7.5vw;
+	color: #EBEBEB;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../../img/Background1.png);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+.SectionWork {
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5em;
+	color: #333333;
+	height: 5em;
+	vertical-align: bottom;
+	text-align: bottom;
+	background-color: #EBEBEB;
+}
+.SectionCarousel {
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5em;
+	color: #333333;
+	text-align: bottom;
+	background-color: #EBEBEB;
+}
+.SectionAllWork {
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5em;
+	color: #333333;
+	height: 5em;
+	text-align: center;
+	vertical-align: top;
+	background-color: #EBEBEB;
+}
+.SectionAllWork button{
+	outline: none;
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5vw;
+	background-color: #333333;
+	color: #EBEBEB;
+	border-radius: 15px;
+	height: 2em;
+	width: 50vw;
+}
+.SectionAllWork hr{
+	width: 48vw;
+	border-top: thick solid #000000;
+}
+.container {
+	margin: 150px auto;
+	text-align: center;
+}
+.carouselSlider {
+	width: 100%;
+	height: 15em;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+.carouselSlider img {
+	cursor: pointer; /* otherwise it's not as obvious items can be clicked */
+	width: 15em;
+	height: 15em;
+}
+a.sliderBtn {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #000000;
+	padding: 20px;
+	margin: 0 10px;
+	color: #000000;
+	text-decoration: none;
+}
+a.sliderBtn:hover {
+	background-color: #AFAFAF;
+}
+.fSlider {
+	max-width: 15em;
+	max-height: 15em;
+	min-width: 15em;
+	min-height: 15em;
+}
+.carouselSlider {
+	max-width: 15em;
+	max-height: 15em;
+	min-width: 15em;
+	min-height: 15em;
+}
+.carouselSlider .sliderItem {
+	box-sizing: border-box;
+	padding: 40px;
+	transition: all 0.2s ease-in-out;
+}
+.carouselSlider .sliderItem.current {
+	padding: 0;
+}
+
+/* Section About */
+.SectionAbout {
+	font-family: 'Reitam', sans-serif;
+	font-size: 7.5vw;
+	color: #EBEBEB;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../../img/bwabout.png);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	vertical-align: center;
+}
+.SectionAbout p{
+	text-align: center;
+}
+.SectionAboutDetail {
+	font-family: 'Reitam', sans-serif;
+	color: #333333;
+	vertical-align: bottom;
+	text-align: bottom;
+	background-color: #EBEBEB;
+}
+.SectionAboutDetail p1{
+	font-size: 5vw;
+}
+.SectionAboutDetail hr{
+	width: 50vw;
+	border-top: thick solid #000000;
+}
+.SectionAboutDetail p2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
+
+
+/* Section Why Create */
+.SectionWhyCreate {
+	font-family: 'Reitam', sans-serif;
+	color: #EBEBEB;
+	vertical-align: bottom;
+	text-align: bottom;
+}
+.SectionWhyCreate p{
+	font-size: 5vw;
+	text-align: right;
+}
+.SectionWhyCreate hr{
+	width: 50vw;
+	border-top: thick solid #000000;
+}
+.SectionWhyCreate p2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
+
+
+/*Section Contact */
+.SectionContact {
+	font-family: 'Reitam', sans-serif;
+	font-size: 2.5vw;
+	color: #EBEBEB;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../../img/contactbw.png);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	vertical-align: center;
+}
+.SectionContact td{
+	text-align: center;
+}
+.SectionContact img {
+	width: 2em;
+	height: 2em;
+}
+#spacer {
+	width: 5vw;
+}
+.brLine{
+	display: block;
+   	margin: 50px 0;
+	line-height:100px;
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+@media all and (max-width: 960px) {
+	.navbar a {
+		font-size: 0.75em;
+	}
+	.SectionAllWork button{
+		font-size: .75em;
+		height: 3em;
+		width: 90vw;
+	}
+	.SectionAllWork hr{
+		width: 85vw;
+	}
+	.SectionAboutDetail p1{
+	font-size: 2em;
+	}
+	.SectionAboutDetail p2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	}
+	.SectionWhyCreate p{
+	font-size: 2em;
+	}
+	.SectionWhyCreate p2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	}
+	.SectionContact {
+	font-size: 1.5em;
+}
+
+}
