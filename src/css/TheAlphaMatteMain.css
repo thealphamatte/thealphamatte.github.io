@@ -1,4 +1,9 @@
 @charset "utf-8";
+@font-face{
+	font-family: "Reitam";
+	src: url("font/Reitam Regular.otf");
+	src: url("font/Reitam Regular.ttf");
+}
 .logo {
 	width: 2.5em;
 	height: 2.5em;
@@ -48,11 +53,13 @@
 	width: 100%;
 	height: 100vh;
 	background-image: url(../../img/Background1.png);
-	background-attachment: fixed;
+	background-attachment: fixed; 
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
+
+/* SEction Work with carousel and all work */
 .SectionWork {
 	font-family: 'Reitam', sans-serif;
 	font-size: 1.5em;
@@ -69,32 +76,8 @@
 	text-align: bottom;
 	background-color: #EBEBEB;
 }
-.SectionAllWork {
-	font-family: 'Reitam', sans-serif;
-	font-size: 1.5em;
-	color: #333333;
-	height: 5em;
-	text-align: center;
-	vertical-align: top;
-	background-color: #EBEBEB;
-}
-.SectionAllWork button{
-	outline: none;
-	font-family: 'Reitam', sans-serif;
-	font-size: 1.5vw;
-	background-color: #333333;
-	color: #EBEBEB;
-	border-radius: 15px;
-	height: 2em;
-	width: 50vw;
-}
-.SectionAllWork hr{
-	width: 48vw;
-	border-top: thick solid #000000;
-}
 .container {
-	margin: 150px auto;
-	text-align: center;
+	text-align: center; 
 }
 .carouselSlider {
 	width: 100%;
@@ -140,6 +123,30 @@ a.sliderBtn:hover {
 .carouselSlider .sliderItem.current {
 	padding: 0;
 }
+.SectionAllWork {
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5em;
+	color: #333333;
+	height: 5em;
+	text-align: center;
+	vertical-align: top;
+	background-color: #EBEBEB;
+}
+.SectionAllWork button{
+	outline: none;
+	font-family: 'Reitam', sans-serif;
+	font-size: 1.5vw;
+	background-color: #333333;
+	color: #EBEBEB;
+	border-radius: 15px;
+	height: 2em;
+	width: 50vw;
+}
+.SectionAllWork hr{
+	width: 48vw;
+	border-top: thick solid #000000;
+}
+
 
 /* Section About */
 .SectionAbout {
