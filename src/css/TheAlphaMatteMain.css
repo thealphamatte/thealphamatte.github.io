@@ -64,12 +64,13 @@
 	font-family: 'Reitam', sans-serif;
 	font-size: 1.5em;
 	color: #333333;
-	height: 5em;
+	height: 15vh;
 	vertical-align: bottom;
 	text-align: bottom;
 	background-color: #EBEBEB;
 }
 .SectionCarousel {
+	height: 70vh;
 	font-family: 'Reitam', sans-serif;
 	font-size: 1.5em;
 	color: #333333;
@@ -80,16 +81,28 @@
 	text-align: center; 
 }
 .carouselSlider {
-	width: 100%;
+/*	width: 100%;
+	max-width: 15em;
+	max-height: 15em;
+	min-width: 15em;
+	min-height: 15em;
 	height: 15em;
 	position: relative;
 	clear: both;
-	overflow: hidden;
+	overflow: hidden; */
 }
 .carouselSlider img {
 	cursor: pointer; /* otherwise it's not as obvious items can be clicked */
 	width: 15em;
 	height: 15em;
+}
+.carouselSlider .sliderItem {
+	box-sizing: border-box;
+	padding: 20px;
+	transition: all 0.2s ease-in-out;
+}
+.carouselSlider .sliderItem.current {
+	padding: 0;
 }
 a.sliderBtn {
 	display: inline-block;
@@ -107,27 +120,12 @@ a.sliderBtn:hover {
 	max-width: 15em;
 	max-height: 15em;
 	min-width: 15em;
-	min-height: 15em;
-}
-.carouselSlider {
-	max-width: 15em;
-	max-height: 15em;
-	min-width: 15em;
-	min-height: 15em;
-}
-.carouselSlider .sliderItem {
-	box-sizing: border-box;
-	padding: 40px;
-	transition: all 0.2s ease-in-out;
-}
-.carouselSlider .sliderItem.current {
-	padding: 0;
+	min-height: 15em; 
 }
 .SectionAllWork {
 	font-family: 'Reitam', sans-serif;
-	font-size: 1.5em;
 	color: #333333;
-	height: 5em;
+	height: 15vh;
 	text-align: center;
 	vertical-align: top;
 	background-color: #EBEBEB;

@@ -8,6 +8,21 @@
 	}
 	
 	
+	.SectionWork {
+	font-size: 1em;
+	height: 17.5vh;
+	}
+	.carouselSlider img {
+		cursor: pointer; /* otherwise it's not as obvious items can be clicked */
+		width: 12.5em;
+		height: 12.5em;
+	}
+	.fSlider {
+		max-width: 12.5em;
+		max-height: 12.5em;
+		min-width: 12.5em;
+		min-height: 12.5em; 
+	}
 	.SectionAllWork button{
 		font-size: .75em;
 		height: 3em;
