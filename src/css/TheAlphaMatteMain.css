@@ -64,13 +64,13 @@
 	font-family: 'Reitam', sans-serif;
 	font-size: 1.5em;
 	color: #333333;
-	height: 15vh;
+	height: 17.5vh;
 	vertical-align: bottom;
 	text-align: bottom;
 	background-color: #EBEBEB;
 }
 .SectionCarousel {
-	height: 70vh;
+	height: 67.5vh;
 	font-family: 'Reitam', sans-serif;
 	font-size: 1.5em;
 	color: #333333;
@@ -163,12 +163,17 @@ a.sliderBtn:hover {
 .SectionAbout p{
 	text-align: center;
 }
+.SectionAbout img{
+	width: 85px;
+	height: 50px;
+}
 .SectionAboutDetail {
 	font-family: 'Reitam', sans-serif;
 	color: #333333;
 	vertical-align: bottom;
 	text-align: bottom;
 	background-color: #EBEBEB;
+	height: 100vh;
 }
 .SectionAboutDetail p1{
 	font-size: 5vw;
@@ -196,7 +201,7 @@ a.sliderBtn:hover {
 }
 .SectionWhyCreate hr{
 	width: 50vw;
-	border-top: thick solid #000000;
+	border-top: thick solid #EBEBEB;
 }
 .SectionWhyCreate p2{
 	font-family: 'Montserrat', sans-serif;
@@ -221,6 +226,10 @@ a.sliderBtn:hover {
 .SectionContact td{
 	text-align: center;
 }
+SectionContact a{
+	display: block;
+	text-decoration: none;
+}
 .SectionContact img {
 	width: 2em;
 	height: 2em;
@@ -228,8 +237,13 @@ a.sliderBtn:hover {
 #spacer {
 	width: 5vw;
 }
-.brLine{
+.brLine1{
 	display: block;
-   	margin: 50px 0;
-	line-height:100px;
+	margin: 30vh 0;
+	content: " ";
+}
+.brLine2{
+	display: block;
+	margin: 18vh 0;
+	content: " ";
 }

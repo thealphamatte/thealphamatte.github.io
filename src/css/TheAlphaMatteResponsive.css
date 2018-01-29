@@ -4,6 +4,7 @@
 		font-size: 0.75em;
 	}
 	.SectionHeading {
+		font-size: 2em;
 		background-attachment: initial; 
 	}
 	
@@ -34,8 +35,24 @@
 	
 	
 	.SectionAbout {
+		font-size: 2em;
 		background-attachment: initial;
 	}
+	.SectionAbout img{
+		width: 42.5px;
+		height: 25px;
+	}
+	.brLine1{
+	display: block;
+	margin: 40vh 0;
+	content: " ";
+	}
+	.brLine2{
+		display: block;
+		margin: 40vh 0;
+		content: " ";
+	}
+
 	.SectionAboutDetail p1{
 	font-size: 2em;
 	}
@@ -58,5 +75,4 @@
 	font-size: 1.5em;
 	background-attachment: initial;
 	}
-
 }
