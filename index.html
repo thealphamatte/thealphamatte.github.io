@@ -25,15 +25,28 @@
 			} // End if
 		  });
 
-		  $('.carouselSlider').fSlider({
-			numOfNextSlides: 1,
-			slidesToShow: 1,
-			showSiblingsHowMuch: 2,
-			showArrows: false,
-			responsive: false,
-			centerMode: true
-		  });
+		  if (document.documentElement.clientWidth < 960) {
+			  $('.carouselSlider').fSlider({
+				numOfNextSlides: 1,
+				slidesToShow: 1,
+				showSiblingsHowMuch: 2,
+				showArrows: false,
+				responsive: false,
+				centerMode: false
+			  });
 
+		  }else{
+			  $('.carouselSlider').fSlider({
+				numOfNextSlides: 1,
+				slidesToShow: 1,
+				showSiblingsHowMuch: 2,
+				showArrows: false,
+				responsive: false,
+				centerMode: true
+			  });
+
+		  }
+		  
 	  });
 </script>
 <style>
