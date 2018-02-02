@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="src/js/fSlider.js"></script>
-<script src="src/js/responsive.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="src/js/jquery-3.3.1.min.js"></script>
+<script src="src/js/jquery.waterwheelCarousel.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+	
 <script type="text/javascript">
-	  $(document).ready(function () {
-		 // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-			if (this.hash !== "") {
-				event.preventDefault();
-				var hash = this.hash;
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 1000, function(){
-					window.location.hash = hash;
-				});
-			} // End if
-		  });
+	$(document).ready(function () {
+		
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 1000, function(){
+				window.location.hash = hash;
+			});
+		} // End if
+		});
 
-		  if (document.documentElement.clientWidth < 960) {
-			  $('.carouselSlider').fSlider({
-				numOfNextSlides: 1,
-				slidesToShow: 1,
-				showSiblingsHowMuch: 2,
-				showArrows: false,
-				responsive: false,
-				centerMode: false
-			  });
-
-		  }else{
-			  $('.carouselSlider').fSlider({
-				numOfNextSlides: 1,
-				slidesToShow: 1,
-				showSiblingsHowMuch: 2,
-				showArrows: false,
-				responsive: false,
-				centerMode: true
-			  });
-
-		  }
-		  
-	  });
+		if (document.documentElement.clientWidth < 960) {
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				pagination: {
+				el: '.swiper-pagination',
+				},
+			});
+		}else{
+			var carousel = $(".swiper-wrapper").waterwheelCarousel({
+				flankingItems: 3,
+				separation:250,
+				separationMultiplier:.75
+			});
+		}
+	});
 </script>
 <style>
 * {
 	box-sizing: border-box;
 }
 body {
+	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	background-color:#333333;
 }
 </style>
-<link href="src/css/fSlider.css" rel="stylesheet">
 <link href="src/css/TheAlphaMatteMain.css" rel="stylesheet">
 <link href="src/css/TheAlphaMatteResponsive.css" rel="stylesheet">
+<link href="src/css/swiper.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -92,20 +85,23 @@ body {
     <tr class="SectionCarousel">
       <td id="spacer"></td>
       <td class="container">
-		  <p class="carouselSlider"> 
-		  	<img class="sliderItem" src="img/1.png" id="item-1" /> 
-		  	<img class="sliderItem" src="img/2.png" id="item-2" /> 
-		  	<img class="sliderItem" src="img/3.png" id="item-3" /> 
-		  	<img class="sliderItem" src="img/4.png" id="item-4" /> 
-		  	<img class="sliderItem" src="img/5.png" id="item-5" /> 
-		  	<img class="sliderItem" src="img/6.png" id="item-6" /> 
-		  	<img class="sliderItem" src="img/7.png" id="item-7" /> 
-		  	<img class="sliderItem" src="img/8.png" id="item-8" /> 
-		  	<img class="sliderItem" src="img/9.png" id="item-9" /> 
-		  	<img class="sliderItem" src="img/7.png" id="item-10" /> 
-		  	<img class="sliderItem" src="img/8.png" id="item-11" /> 
-		  	<img class="sliderItem" src="img/9.png" id="item-12" /> 
-		  </p>
+		<div class="swiper-container">
+		  <div id="swiper-wrapper" class="swiper-wrapper"> 
+			<img class="swiper-slide" src="img/1.png" id="item-1" /> 
+		  	<img class="swiper-slide" src="img/2.png" id="item-2" />
+		  	<img class="swiper-slide" src="img/3.png" id="item-3" /> 
+		  	<img class="swiper-slide" src="img/4.png" id="item-4" />
+		  	<img class="swiper-slide" src="img/5.png" id="item-5" />
+		  	<img class="swiper-slide" src="img/6.png" id="item-6" />
+		  	<img class="swiper-slide" src="img/7.png" id="item-7" />
+		  	<img class="swiper-slide" src="img/8.png" id="item-8" />
+		  	<img class="swiper-slide" src="img/9.png" id="item-9" />
+		  	<img class="swiper-slide" src="img/7.png" id="item-10" />
+		  	<img class="swiper-slide" src="img/8.png" id="item-11" />
+		  	<img class="swiper-slide" src="img/9.png" id="item-12" />
+		  </div>
+		  <div class="swiper-pagination"></div>
+		</div>
 		</td>
 		<td id="spacer"></td>
     </tr>
@@ -137,7 +133,7 @@ body {
       <td id="spacer"></td>
       <td> <p> <br>WHY I CREATE<br>EVERY DAY</p><br>
 		  	<hr align="right">
-		 	<p2><br>The Alpha Matte represents a brand that's truly about saying more with less. A deep desire to convey aesthetics and functionality through design in a way that honors my passion for minimalism and simplicity drives me every day to make something new.<br><br>Something new. Every day.<br><br><br></p2>
+		 	<p2><br>Creating every day is definitely one of the many factors that has taken The Alpha Matte, as a brand, as far as it has come. Not only has it challenged me creatively, but it has changed me in ways that have impacted all facets of my life positively. My belief in the notion that my mind resembles a muscle and fitness is of paramount importance to be the best it can be, motivates my consistent and dedicated behavior.<br><br><br></p2>
 	  </td>
 	  <td id="spacer"></td>
     </tr>

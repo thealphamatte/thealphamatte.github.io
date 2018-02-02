@@ -10,20 +10,18 @@
 	
 	
 	.SectionWork {
-	font-size: 1em;
-	height: 17.5vh;
+		font-size: 1em;
+		height: 17.5vh;
 	}
-	.carouselSlider img {
-		cursor: pointer; /* otherwise it's not as obvious items can be clicked */
-		width: 12.5em;
-		height: 12.5em;
+	.swiper-container {
+		width: 90vw;
+		height: 100vw;
+	  }
+	.swiper-wrapper img {
+		width: 90vw;
+		height: 90vw;
 	}
-	.fSlider {
-		max-width: 12.5em;
-		max-height: 12.5em;
-		min-width: 12.5em;
-		min-height: 12.5em; 
-	}
+
 	.SectionAllWork button{
 		font-size: .75em;
 		height: 3em;
@@ -33,7 +31,7 @@
 		width: 85vw;
 	}
 	
-	
+
 	.SectionAbout {
 		font-size: 2em;
 		background-attachment: initial;
@@ -43,9 +41,9 @@
 		height: 25px;
 	}
 	.brLine1{
-	display: block;
-	margin: 40vh 0;
-	content: " ";
+		display: block;
+		margin: 40vh 0;
+		content: " ";
 	}
 	.brLine2{
 		display: block;
@@ -54,25 +52,25 @@
 	}
 
 	.SectionAboutDetail p1{
-	font-size: 2em;
+		font-size: 2em;
 	}
 	.SectionAboutDetail p2{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
 	}
 	
 	
 	.SectionWhyCreate p{
-	font-size: 2em;
+		font-size: 2em;
 	}
 	.SectionWhyCreate p2{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
 	}
 	
 	
 	.SectionContact {
-	font-size: 1.5em;
-	background-attachment: initial;
+		font-size: 1.5em;
+		background-attachment: initial;
 	}
 }

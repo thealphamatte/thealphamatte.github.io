@@ -77,50 +77,31 @@
 	text-align: bottom;
 	background-color: #EBEBEB;
 }
+
 .container {
-	text-align: center; 
+	text-align: center;
 }
-.carouselSlider {
-/*	width: 100%;
-	max-width: 15em;
-	max-height: 15em;
-	min-width: 15em;
-	min-height: 15em;
-	height: 15em;
-	position: relative;
-	clear: both;
-	overflow: hidden; */
-}
-.carouselSlider img {
-	cursor: pointer; /* otherwise it's not as obvious items can be clicked */
-	width: 15em;
-	height: 15em;
-}
-.carouselSlider .sliderItem {
-	box-sizing: border-box;
-	padding: 20px;
-	transition: all 0.2s ease-in-out;
-}
-.carouselSlider .sliderItem.current {
-	padding: 0;
-}
-a.sliderBtn {
-	display: inline-block;
-	vertical-align: middle;
-	border: 1px solid #000000;
-	padding: 20px;
-	margin: 0 10px;
-	color: #000000;
-	text-decoration: none;
-}
-a.sliderBtn:hover {
-	background-color: #AFAFAF;
-}
-.fSlider {
-	max-width: 15em;
-	max-height: 15em;
-	min-width: 15em;
-	min-height: 15em; 
+
+@media all and (min-width: 960px) {
+	.swiper-container {
+		width: 100%;
+		height: 20em;
+	  }
+	.swiper-wrapper {
+		width:100%;
+		border:none;
+		height:20em;
+		position:relative;
+		clear:both;
+		overflow:hidden;
+		background:#EBEBEB;
+	}
+	.swiper-wrapper img{
+		width: 15em;
+		height: 15em; 
+		visibility:hidden;
+		cursor:pointer; 
+	}
 }
 .SectionAllWork {
 	font-family: 'Reitam', sans-serif;
