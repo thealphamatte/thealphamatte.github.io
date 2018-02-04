@@ -176,7 +176,10 @@
 	vertical-align: bottom;
 	text-align: bottom;
 }
-.SectionWhyCreate p{
+.SectionWhyCreate div{
+	text-align: right;
+}
+.SectionWhyCreate p3{
 	font-size: 5vw;
 	text-align: right;
 }
@@ -184,7 +187,7 @@
 	width: 50vw;
 	border-top: thick solid #EBEBEB;
 }
-.SectionWhyCreate p2{
+.SectionWhyCreate p4{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5em;
 }
